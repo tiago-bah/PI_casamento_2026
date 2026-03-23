@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenny & Jason</title>
+  <link href__="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  
+  <nav>
+    <div class="nav-inner">
+      <a href__="#home" class="nav-logo">J&amp;J</a>
+      <a href__="#home" class="nav-center">Jenny &amp; Jason</a>
+      <ul class="nav-links">
+        <li><a href__="#home">Home</a></li>
+        <li><a href__="#our-story">Our Story</a></li>
+        <li><a href__="#details">Details</a></li>
+        <li><a href__="#rsvp-section">RSVP</a></li>
+      </ul>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href__="#home"        onclick="closeMenu()">Home</a>
+      <a href__="#our-story"   onclick="closeMenu()">Our Story</a>
+      <a href__="#details"     onclick="closeMenu()">Details</a>
+      <a href__="#rsvp-section" onclick="closeMenu()">RSVP</a>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="hero-title">
+      <h1>JENNY &amp; JASON</h1>
+    </div>
+    <div class="hero-image-wrap">
+      <img src="Src/imagemdahome.png" alt="Hero" />
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatum unde quia voluptate repudiandae culpa voluptates commodi et optio dicta quaerat, repellat neque perferendis! Ea voluptas est repellendus soluta suscipit?.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="section-card" id="our-story">
+    <img src="Src/maosdadas 1.png" alt="Our Story" />
+    <div class="overlay"></div>
+    <div class="card-label">
+      <h2>OUR STORY</h2>
+    </div>
+  </section>
+
+  
+  <section class="section-card" id="details">
+    <img src="Src/maosdadas 1.png" alt="Our Details" />
+    <div class="overlay"></div>
+    <div class="card-label">
+      <h2>OUR DETAILS</h2>
+    </div>
+  </section>
+
+ 
+  <section class="section-card" id="rsvp-section">
+    <img src="Src/maosdadas 1.png" alt="RSVP" />
+    <div class="overlay"></div>
+    <div class="card-label">
+      <h2>RSVP</h2>
+    </div>
+  </section>
+
+  
+  <section class="section-card">
+  
+    <img src="Src/maosdadas 1.png" alt="Registry" />
+    <div class="overlay"></div>
+    <div class="card-label">
+      <h2>Registry</h2>
+    </div>
+  </section>
+
+ 
+  <section class="registry-banner">
+   
+    <img src="Src/florescoloridas.png" alt="Registry flowers" />
+    <div class="overlay"></div>
+    <div class="reg-content">
+      <h2>Registry</h2>
+      <p>Pottery Barn · Williams Sonoma</p>
+      <span>We are registered at the following stores. Your generosity means the world to us.</span>
+    </div>
+  </section>
+
+
+  <section id="gifts">
+    <h3>gift for the couple</h3>
+    <div class="gift-buttons">
+      <a href__="#" class="gift-btn">$Money$</a>
+      <a href__="#" class="gift-btn">Mobile</a>
+      <a href__="#" class="gift-btn">Food</a>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <h2>J&amp;J</h2>
+    <div class="date-block">
+      <p class="label">Saturday</p>
+      <p class="date">September 20, 2025</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>
