@@ -155,27 +155,20 @@ nav {
 .section-card {
   position: relative;
   width: 100%;
-  height: auto; /* ✅ corrigido */
+  height: auto;
   overflow: hidden;
   padding: 0 40px 40px;
 }
 
 .section-card img {
   width: 100%;
-  height: auto; /* ✅ corrigido */
-  object-fit: cover;
-  transition: transform 0.5s;
+  height: auto;
+
 }
 
-.section-card:hover img {
-  transform: scale(1.05);
-}
 
-.section-card .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(42, 26, 24, 0.35);
-}
+
+
 
 .section-card .card-label {
   position: absolute;
@@ -189,9 +182,6 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: #ffffff;
-}
-.section-card{
-
 }
 
 /* REGISTRY */
@@ -248,11 +238,45 @@ footer h2 {
     grid-template-columns: 1fr;
   }
 
-  .nav-center { display: none; }
-  .nav-links { display: none; }
-  .nav-toggle { display: block; }
+  .nav-center {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 
   .hero-image-wrap img {
     height: 70vh;
   }
+}
+
+
+.gift-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.gift-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: #3a2a28;
+  border: 1px solid #8a6a68;
+  border-radius: 9999px;
+  padding: 10px 28px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.gift-btn:hover {
+  background-color: #8a6a68;
+  color: #ffffff;
 }
